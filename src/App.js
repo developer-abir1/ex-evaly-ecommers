@@ -1,12 +1,12 @@
  
 import './App.css';
-import Layout from './components/main/Layout/Layout';
-
+import Home from './components/main/Home/Home/Home'; 
+import { Routes, Route, Link } from "react-router-dom";
 function App() {
   return (
-    <Layout>
-     
-    </Layout>
+    <Routes>
+        <Route path="/" element={<Home />} /> 
+      </Routes>
   );
 }
 
